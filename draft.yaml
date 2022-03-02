@@ -1,0 +1,51 @@
+models:
+  Models\Slide:
+    title: string:400
+    image: string nullable
+    timestamps: true
+
+  Models\Gallery:
+    title: string:400
+    image: string nullable
+    url: string
+    description: string
+  
+  Models\Privacypolicy:
+    text: string
+
+  Models\Category:
+    parent_id: id foreign:categories nullable
+    lft: integer unsigned nullable
+    rgt: integer unsigned nullable
+    depth: integer unsigned nullable
+    name: string
+    image: string nullable
+    description: string
+    timestamps: true
+    softDeletes: true
+    relationships:
+      hasMany: CatContent
+  
+  Models\CatContent:
+    category_id: id foreign
+    title: string
+    backgroundImage: string nullable
+    description: string nullable
+    videourl: string
+    featured: boolean default:0
+    timestamps: true
+    softDeletes: true
+  
+  Models\ContactUs:
+    name: string
+    email: string
+    message: string nullable
+  
+  Models\Blog:
+    title: string
+    image: string nullable
+    description: string
+    
+
+seeders: Slide, Gallery, Privacypolicy, Category, CatContent
+    

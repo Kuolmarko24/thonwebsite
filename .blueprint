@@ -1,0 +1,36 @@
+created:
+    - database/factories/Models/SlideFactory.php
+    - database/factories/Models/GalleryFactory.php
+    - database/factories/Models/PrivacypolicyFactory.php
+    - database/factories/Models/CategoryFactory.php
+    - database/factories/Models/CatContentFactory.php
+    - database/factories/Models/ContactUsFactory.php
+    - database/factories/Models/BlogFactory.php
+    - database/migrations/2021_02_15_082958_create_slides_table.php
+    - database/migrations/2021_02_15_082959_create_galleries_table.php
+    - database/migrations/2021_02_15_083000_create_privacypolicies_table.php
+    - database/migrations/2021_02_15_083001_create_categories_table.php
+    - database/migrations/2021_02_15_083002_create_cat_contents_table.php
+    - database/migrations/2021_02_15_083003_create_contact_us_table.php
+    - database/migrations/2021_02_15_083004_create_blogs_table.php
+    - app/Models/Slide.php
+    - app/Models/Gallery.php
+    - app/Models/Privacypolicy.php
+    - app/Models/Category.php
+    - app/Models/CatContent.php
+    - app/Models/ContactUs.php
+    - app/Models/Blog.php
+    - database/seeders/SlideSeeder.php
+    - database/seeders/GallerySeeder.php
+    - database/seeders/PrivacypolicySeeder.php
+    - database/seeders/CategorySeeder.php
+    - database/seeders/CatContentSeeder.php
+models:
+    Models\User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }
+    Models\Slide: { title: 'string:400', image: 'string nullable', timestamps: timestamps }
+    Models\Gallery: { title: 'string:400', image: 'string nullable', url: string, description: string }
+    Models\Privacypolicy: { text: string }
+    Models\Category: { parent_id: 'id foreign:categories nullable', lft: 'integer unsigned nullable', rgt: 'integer unsigned nullable', depth: 'integer unsigned nullable', name: string, image: 'string nullable', description: string, timestamps: timestamps, softdeletes: softDeletes, relationships: { hasMany: CatContent } }
+    Models\CatContent: { category_id: 'id foreign', title: string, backgroundImage: 'string nullable', description: 'string nullable', videourl: string, featured: 'boolean default:0', timestamps: timestamps, softdeletes: softDeletes }
+    Models\ContactUs: { name: string, email: string, message: 'string nullable' }
+    Models\Blog: { title: string, image: 'string nullable', description: string }
