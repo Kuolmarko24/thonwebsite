@@ -112,7 +112,7 @@
                 </div>
                 <div class="col-lg-3 offset-lg-1 col-md-6">
                     <div class="footer__newslatter">
-                        <h4>Designed and Developed by <a href="https://kuolmarko24.github.io/">Kuol Marko</a></h4>
+                        <h5>Developed by <a href="https://kuolmarko24.github.io/">Kuol Lual</a></h5>
                         {{-- <form action="#">
                             <input type="text" placeholder="Email">
                             <button type="submit"><i class="fa fa-send-o"></i></button>
