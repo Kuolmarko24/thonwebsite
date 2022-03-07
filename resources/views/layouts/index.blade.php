@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="DaJ Template">
+    <meta name="description" content="Dengajok Pictures">
     <meta name="keywords" content="Dengajok  Pictures, film, creative, videosgraphy,Thon, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -88,7 +88,7 @@
                         <ul>
                             <li>
                                 <i class="fa fa-phone"></i>
-                                <p>Phone</p>
+                                <p>Phone No</p>
                                 <h6>+61410627199</h6>
                             </li>
                             <li>
@@ -111,13 +111,13 @@
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-1 col-md-6">
-                    {{-- <div class="footer__newslatter">
-                        <h4>Stay With me</h4>
-                        <form action="#">
+                    <div class="footer__newslatter">
+                        <h4>Designed and Developed by <a href="https://kuolmarko24.github.io/">Kuol Marko</a></h4>
+                        {{-- <form action="#">
                             <input type="text" placeholder="Email">
                             <button type="submit"><i class="fa fa-send-o"></i></button>
-                        </form>
-                    </div> --}}
+                        </form> --}}
+                    </div>
                 </div>
             </div>
         </div>
